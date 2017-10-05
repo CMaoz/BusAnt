@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context="com.example.cristianzapata.busant.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="36dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textColor="@color/gold"
+        android:textColorHint="@color/gold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="26dp"
+        android:id="@+id/tCorreo"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="@string/correo"
+        android:textColor="@color/gold"
+        android:textColorHint="@color/gold"
+        android:id="@+id/eCorreo"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/tCorreo"
+        android:layout_alignBottom="@+id/tCorreo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tContrseña"
+        android:layout_toRightOf="@+id/tContrseña" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contraseña"
+        android:textColor="@color/gold"
+        android:textColorHint="@color/gold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/tContrseña"
+        android:layout_alignBaseline="@+id/eContraseña"
+        android:layout_alignBottom="@+id/eContraseña"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/gold"
+        android:textColorHint="@color/gold"
+        android:hint="@string/contraseña"
+        android:id="@+id/eContraseña"
+        android:inputType="textPassword"
+        android:layout_below="@+id/eCorreo"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_below="@+id/bIniciar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Iniciar"
+        android:textColor="@color/gold"
+        android:background="@color/darkviolet"
+        android:textSize="20sp"
+        android:onClick="Iniciar"
+        android:id="@+id/bIniciar"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="Registrarse"
+        android:textSize="25dp"
+        android:text="@string/registrar"
+        android:textColor="@color/gold"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/textView2" />
+
+</RelativeLayout>

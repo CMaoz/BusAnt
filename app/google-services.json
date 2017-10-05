@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230829895206",
+    "project_id": "firebase-busant"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230829895206:android:d6bc2d36bd6057d4",
+        "android_client_info": {
+          "package_name": "com.example.cristianzapata.busant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230829895206-eejh7m6lu5p70cgru437vv6b3g98k22d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cristianzapata.busant",
+            "certificate_hash": "07c8047759d6b5a2e197d63d4c7b7198f812a853"
+          }
+        },
+        {
+          "client_id": "230829895206-pfudijnu8sb68q1kbmmk3uoafr9coq10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCAzL1Lk2LTU3ReSq5CD6DVuRms9rPR2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

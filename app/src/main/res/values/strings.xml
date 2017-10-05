@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BusAnt</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="CerrarSes">Cerrar sesión</string>
+    <string name="mi_perfil">Perfil</string>
+    <string name="Principal">Menú principal</string>
+    <string name="facebook_app_id">1833307260030301</string>
+    <string name="fb_login_protocol_scheme">fb1833307260030301</string>
+    <string name="registrar">Registrar</string>
+    <string name="Iniciar">Iniciar</string>
+    <string name="correo">Correo</string>
+    <string name="repetircontraseña">Repetir contraseña</string>
+    <string name="Repetircontraseña">Repetir contraseña</string>
+    <string name="Cancelar">Cancelar</string>
+</resources>

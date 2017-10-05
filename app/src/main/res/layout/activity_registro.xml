@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cristianzapata.busant.RegistroActivity"
+    android:background="@color/green">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"
+        android:background="@color/green"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textColor="@color/gold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tCorreo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:id="@+id/eCorreo"
+        android:textSize="20dp"
+        android:textColorHint="@color/gold"
+        android:textColor="@color/gold"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/tCorreo"
+        android:layout_alignBottom="@+id/tCorreo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tContrseña"
+        android:layout_toRightOf="@+id/tContrseña" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contraseña"
+        android:textColor="@color/gold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/eCorreo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tContrseña" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/contraseña"
+        android:id="@+id/eContraseña"
+        android:textColorHint="@color/gold"
+        android:textColor="@color/gold"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/tCorreo"
+        android:layout_toRightOf="@+id/tContrseña"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tRecontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repetircontraseña"
+        android:textColor="@color/gold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/eContraseña"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Repetircontraseña"
+        android:id="@+id/eRContraseña"
+        android:textSize="20dp"
+        android:textColorHint="@color/gold"
+        android:textColor="@color/gold"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/tRecontraseña"
+        android:layout_alignBottom="@+id/tRecontraseña"
+        android:layout_toRightOf="@+id/tRecontraseña"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancelar"
+        android:id="@+id/bCancelar"
+        android:onClick="onclick"
+        android:textColor="@color/gold"
+        android:background="@color/darkviolet"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/eRContraseña"
+        android:layout_toLeftOf="@+id/eRContraseña"
+        android:layout_toStartOf="@+id/eRContraseña" />
+
+    <Button
+        android:id="@+id/bRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="@string/registrar"
+        android:background="@color/darkviolet"
+        android:textColor="@color/gold"
+        android:layout_marginRight="18dp"
+        android:layout_alignBaseline="@+id/bCancelar"
+        android:layout_alignBottom="@+id/bCancelar"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_marginEnd="18dp" />
+
+</RelativeLayout>
